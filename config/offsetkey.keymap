@@ -51,11 +51,11 @@
 
         BASE {
             bindings = <
-&kp ESC       &kp N1          &kp N2           &kp N3          &kp N4     &kp N5     &kp N6      &kp N7     &kp N8             &kp N9     &kp N0              &kp MINUS  &kp EQUAL  &kp BSPC      &kp DELETE               &kp NUMBER_6
-&kp TAB       &kp Q           &kp W            &kp E           &kp R      &kp T                  &kp Y      &kp U              &kp I      &kp O               &kp P      &kp LBKT   &kp RBKT      &kp BSLH       &kp HOME  &kp T
-&kp LCTRL     &kp A           &kp S            &kp D           &kp F      &kp G                  &kp H      &kp J              &kp K      &kp L               &kp SEMI   &kp APOS   &kp ENTER     &kp PAGE_DOWN            &kp G
-&shift_caps   &kp Z           &kp X            &kp C           &kp V      &kp B                  &kp N      &kp M              &kp COMMA  &kp DOT             &kp FSLH   &kp RSHFT  &kp UP_ARROW  &mo 3                    &kp B
-&mo 1         &kp LCTRL       &kp LEFT_GUI     &kp LEFT_ALT               &kp SPACE                         &tab_hold 2 SPACE  &mo 2      &kp K_CONTEXT_MENU  &kp RCTRL  &kp LEFT   &kp DOWN      &kp RIGHT                &kp SPACE
+&kp ESC       &kp N1          &kp N2           &kp N3          &kp N4     &kp N5     &kp N6      &kp N7     &kp N8             &kp N9     &kp N0              &kp MINUS  &kp EQUAL  &kp BSPC      &kp DELETE            &kp NUMBER_6
+&kp TAB       &kp Q           &kp W            &kp E           &kp R      &kp T                  &kp Y      &kp U              &kp I      &kp O               &kp P      &kp LBKT   &kp RBKT      &kp BSLH    &kp HOME  &kp T
+&kp LCTRL     &kp A           &kp S            &kp D           &kp F      &kp G                  &kp H      &kp J              &kp K      &kp L               &kp SEMI   &kp APOS   &kp ENTER     &kp END               &kp G
+&shift_caps   &kp Z           &kp X            &kp C           &kp V      &kp B                  &kp N      &kp M              &kp COMMA  &kp DOT             &kp FSLH   &kp RSHFT  &kp UP_ARROW  &mo 3                 &kp B
+&mo 1         &kp LCTRL       &kp LEFT_GUI     &kp LEFT_ALT               &kp SPACE                         &tab_hold 2 SPACE  &mo 2      &kp K_CONTEXT_MENU  &kp RCTRL  &kp LEFT   &kp DOWN      &kp RIGHT             &kp SPACE
 &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp ENTER  &kp SPACE              &mkp LCLK  &mkp LCLK          &mkp RCLK  &none
             >;
 
@@ -66,10 +66,10 @@
         layer_1 {
             bindings = <
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp F7          &kp F8           &kp F9           &kp F10          &kp F11       &kp F12          &kp BACKSPACE  &kp DELETE                  &kp F6
-&none      &none   &none   &none   &none   &none               &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_ASTERISK  &none          &none          &kp PAGE_UP  &none
-&none      &none   &none   &none   &none   &none               &mkp LCLK       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_DIVIDE    &kp KP_ENTER   &kp PAGE_DOWN               &none
-&none      &none   &none   &none   &none   &none               &mkp RCLK       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none            &none          &none                       &none
-&none      &none   &none   &none           &none                               &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER     &none         &none            &none          &none                       &none
+&trans     &none   &none   &none   &none   &none               &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_ASTERISK  &none          &none          &kp PAGE_UP  &none
+&trans     &none   &none   &none   &none   &none               &mkp LCLK       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_DIVIDE    &kp KP_ENTER   &kp PAGE_DOWN               &none
+&trans     &none   &none   &none   &none   &none               &mkp RCLK       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none            &none          &none                       &none
+&none      &trans  &none   &trans          &trans                              &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER     &none         &none            &none          &none                       &none
 &none      &none   &none   &none   &none   &none               &none           &none            &none            &none
             >;
 
@@ -78,11 +78,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE    &kp F1                  &kp F2                   &kp F3           &kp F4             &kp F5  &kp F6      &kp F7         &kp F8     &kp F9     &kp F10    &kp F11   &kp F12  &kp BACKSPACE  &kp DELETE         &kp F6
-&none        &none                   &kp LC(PAGE_UP)          &mmv MOVE_UP     &kp LC(PAGE_DOWN)  &none               &kp PAGE_UP    &none      &kp UP     &none      &kp HOME  &none    &none          &none       &none  &none
-&none        &none                   &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none               &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp END   &none    &none          &none              &none
-&none        &none                   &none                    &none            &none              &none               &none          &mkp LCLK  &mkp RCLK  &none      &none     &none    &none          &none              &none
-&none        &none                   &none                    &none                               &none                              &none      &none      &none      &none     &none    &none          &none              &none
+&kp TILDE    &kp F1                  &kp F2                   &kp F3           &kp F4             &kp F5  &kp F6      &kp F7         &kp F8     &kp F9     &kp F10    &kp F11   &kp F12  &kp BACKSPACE  &kp DELETE                  &kp F6
+&trans       &none                   &kp LC(PAGE_UP)          &mmv MOVE_UP     &kp LC(PAGE_DOWN)  &none               &kp PAGE_UP    &none      &kp UP     &none      &kp HOME  &none    &none          &none          &kp PAGE_UP  &none
+&trans       &none                   &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none               &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp END   &none    &none          &kp PAGE_DOWN               &none
+&trans       &none                   &none                    &none            &none              &none               &none          &mkp LCLK  &mkp RCLK  &none      &none     &none    &none          &none                       &none
+&none        &trans                  &trans                   &trans                              &trans                             &none      &none      &none      &none     &none    &none          &none                       &none
 &kp LG(TAB)  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(LC(ESC))  &kp LG(LC(D))      &none               &none          &none      &none      &none
             >;
 
@@ -91,12 +91,12 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans           &trans           &trans           &bl BL_CYCLE     &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &bl BL_DEC       &bl BL_TOG       &bl BL_INC       &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&sys_reset       &trans           &trans           &trans           &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&bootloader      &trans           &trans           &trans                            &trans                            &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&rgb_ug RGB_HUI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &trans                    &trans  &trans  &trans  &trans
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &none      &none  &none  &none  &none  &none  &none  &none  &none         &none
+&none            &none            &none            &bl BL_CYCLE     &none            &none                    &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none            &none            &bl BL_DEC       &bl BL_TOG       &bl BL_INC       &none                    &none  &none  &none  &none  &none  &none  &none  &none         &none
+&sys_reset       &none            &none            &none            &none            &none                    &none  &none  &none  &none  &none  &none  &none  &none         &none
+&bootloader      &none            &none            &none                             &none                           &none  &none  &none  &none  &none  &none  &none         &none
+&rgb_ug RGB_HUI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &none                    &none  &none  &none  &none
             >;
         };
     };
