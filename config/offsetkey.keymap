@@ -44,9 +44,9 @@
     };
 
     behaviors {
-        ltq: ltq {
+        hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LTQ";
+            label = "HOLD_TAP";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -54,9 +54,9 @@
             quick-tap-ms = <180>;
         };
 
-        new_behavior: new_behavior {
+        td_shift_caps: td_shift_caps {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
@@ -76,16 +76,16 @@
 
         BASE {
             bindings = <
-&kp ESC       &kp N1          &kp N2           &kp N3          &kp N4     &kp N5     &kp N6      &kp N7     &kp N8     &kp N9         &kp N0   &kp MINUS  &kp EQUAL        &kp BSPC      &kp F5                           &kp NUMBER_6
-&kp TAB       &kp Q           &kp W            &kp E           &kp R      &kp T                  &kp Y      &kp U      &kp I          &kp O    &kp P      &kp LBKT         &kp RBKT      &kp BSLH         &rgb_ug RGB_ON  &kp T
-&kp LCTRL     &kp A           &kp S            &kp D           &kp F      &kp G                  &kp H      &kp J      &kp K          &kp L    &kp SEMI   &kp APOS         &kp ENTER     &rgb_ug RGB_OFF                  &kp G
-&kp LSHFT     &kp Z           &kp X            &kp C           &kp V      &kp B                  &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH   &kp RIGHT_SHIFT  &kp UP_ARROW  &kp DELETE                       &kp B
-&kp LCTRL     &kp LEFT_GUI    &kp LEFT_ALT     &mo 1                      &kp SPACE                         &kp SPACE  &kp RIGHT_ALT  &mo 2    &kp RCTRL  &kp LEFT         &kp DOWN      &kp RIGHT                        &kp SPACE
-&kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp ENTER  &kp SPACE              &mkp LCLK  &mkp LCLK  &mkp RCLK      &none
+&kp ESC         &kp N1          &kp N2           &kp N3          &kp N4     &kp N5     &kp N6      &kp N7     &kp N8             &kp N9     &kp N0              &kp MINUS  &kp EQUAL        &kp BSPC      &kp DELETE             &kp NUMBER_6
+&kp TAB         &kp Q           &kp W            &kp E           &kp R      &kp T                  &kp Y      &kp U              &kp I      &kp O               &kp P      &kp LBKT         &kp RBKT      &kp BSLH    &kp PG_UP  &kp T
+&kp LCTRL       &kp A           &kp S            &kp D           &kp F      &kp G                  &kp H      &kp J              &kp K      &kp L               &kp SEMI   &kp APOS         &kp ENTER     &kp PG_DN              &kp G
+&td_shift_caps  &kp Z           &kp X            &kp C           &kp V      &kp B                  &kp N      &kp M              &kp COMMA  &kp DOT             &kp FSLH   &kp RIGHT_SHIFT  &kp UP_ARROW  &mo 3                  &kp B
+&mo 1           &kp LCTRL       &kp LEFT_GUI     &kp LEFT_ALT               &kp SPACE                         &hold_tap 2 SPACE  &mo 2      &kp K_CONTEXT_MENU  &kp RCTRL  &kp LEFT         &kp DOWN      &kp RIGHT              &kp SPACE
+&kp UP_ARROW    &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp ENTER  &kp SPACE              &mkp LCLK  &mkp LCLK          &mkp RCLK  &none
             >;
 
             label = "layer0";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp DELETE DELETE>;
         };
 
         layer_1 {
