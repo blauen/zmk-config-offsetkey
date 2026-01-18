@@ -221,8 +221,8 @@ layers:
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-left$$
+  - $$mdi:pan-right$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
