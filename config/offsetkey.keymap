@@ -10,9 +10,11 @@
 #include <behaviors/off_io.dtsi>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
@@ -117,12 +119,12 @@
 
         BT,SET {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans          &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none      &none  &none  &none  &none  &none  &none  &none  &bootloader         &none
+&none           &none         &none         &none         &none            &none                    &none  &none  &none  &none  &none  &none  &none  &none        &none  &none
+&none           &none         &none         &bl BL_TOG    &none            &none                    &none  &none  &none  &none  &none  &none  &none  &none               &none
+&none           &none         &none         &none         &none            &none                    &none  &none  &none  &none  &none  &none  &none  &none               &none
+&bt BT_CLR_ALL  &none         &none         &none                          &none                           &none  &none  &none  &none  &none  &none  &none               &none
+&none           &none         &none         &none         &rgb_ug RGB_TOG  &none                    &none  &none  &none  &none
             >;
 
             label = "BT,SET";
