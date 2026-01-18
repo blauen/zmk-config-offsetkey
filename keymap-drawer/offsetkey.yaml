@@ -292,10 +292,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&bl BL_CYCLE'
+  - '&bl BL_INC'
   - '&bl BL_TOG'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&bl BL_DEC'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -334,10 +334,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB EFF
+  - RGB BRD
+  - RGB BRI
+  - RGB EFR
   - RGB TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
