@@ -53,6 +53,13 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+        };
     };
 
     combos {
