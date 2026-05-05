@@ -76,10 +76,10 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-down-bold$$
+  - HOME
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - END
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
