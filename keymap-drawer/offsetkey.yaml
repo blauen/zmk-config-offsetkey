@@ -190,10 +190,10 @@ layers:
   - Ctl+Sft+F5
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+PgUp
+  - Ctl+PG UP
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Ctl+PgDn
+  - $$mdi:pan-up$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PgUp
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -206,10 +206,10 @@ layers:
   - INS
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PgDn
   - $$mdi:arrow-left-bold$$
@@ -222,9 +222,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-right$$
-  - $$mdi:pan-down$$
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
